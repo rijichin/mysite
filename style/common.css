@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/*header头部*/
+html {
+  filter: grayscale(100%);
+}
+
+#header {
+  width: 100%;
+  height: 32px;
+  background: #f2f2f2;
+  font-size: 12px;
+  line-height: 32px;
+}
+#header a {
+  color: #999;
+}
+#header .head_left {
+  position: relative;
+  height: 32px;
+}
+#header .head_left span {
+  margin-right: 21px;
+  color: #999999;
+}
+#header .head_left a {
+  margin-right: 21px;
+}
+#header .head_left a:hover {
+  color: #FF0036;
+}
+#header .head_left .personal {
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+}
+#header .head_left .personal ul {
+  width: 100%;
+  color: #999;
+  background: #f2f2f2;
+  z-index: 100;
+  line-height: 24px;
+  position: absolute;
+  left: 0;
+  top: 32px;
+}
+#header .header_right_nav > li {
+  position: relative;
+  float: left;
+}
+#header .header_right_nav > li:hover {
+  background: #fff;
+}
+#header .header_right_nav > li:hover > a {
+  color: #FF0036;
+}
+#header .header_right_nav > li:hover > a span {
+  transform: rotate(180deg);
+}
+#header .header_right_nav > li:hover .buy {
+  display: block;
+}
+#header .header_right_nav > li > a {
+  padding: 0 12px;
+  position: relative;
+}
+#header .header_right_nav > li > a span {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #bbbbbb transparent transparent;
+  transform-origin: 50% 25%;
+  transition: 0.3s;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+#header .header_right_nav > li .buy {
+  background: #fff;
+  display: none;
+  padding-top: 5px;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  padding-left: 10px;
+  width: 96px;
+  height: 57px;
+  line-height: 20px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+#header .header_right_nav > li .buy a:hover {
+  color: #FF0036;
+  text-decoration: underline;
+}
+
+/*logo导航部分*/
+@font-face {
+  font-family: iconfont;
+  src: url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.eot);
+  src: url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.eot?#iefix) format("embedded-opentype"), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.woff) format("woff"), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.ttf) format("truetype"), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.svg#fpIconFont) format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#nav {
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px solid #ff0036;
+}
+#nav .nav {
+  height: 166px;
+}
+#nav .logo a {
+  width: 240px;
+  height: 130px;
+  display: block;
+  text-indent: -9999em;
+  background: url(../img/logo.gif) no-repeat;
+  background-size: 240px 130px;
+  margin-left: -20px;
+}
+#nav .fastkey {
+  width: 1010px;
+  height: 130px;
+}
+#nav .fastkey .search {
+  width: 626px;
+  height: 40px;
+  position: relative;
+  margin: 38px 0 0 98px;
+  border: 2px solid #ff0036;
+  font-size: 0;
+}
+#nav .fastkey .search input, #nav .fastkey .search button {
+  float: left;
+  border: none;
+}
+#nav .fastkey .search input {
+  width: 480px;
+  height: 34px;
+  margin-top: 1px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#nav .fastkey .search .search-ul {
+  position: absolute;
+  background: #fff;
+  width: 492px;
+  top: 38px;
+  left: -2px;
+  z-index: 100;
+  border: 1px solid transparent;
+}
+#nav .fastkey .search .search-ul a {
+  padding-left: 10px;
+  display: block;
+  height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  color: black;
+}
+#nav .fastkey .search button {
+  width: 132px;
+  height: 36px;
+  height: 36px;
+  width: 132px;
+  color: #fff;
+  letter-spacing: 6px;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+  background: #ff0036;
+}
+#nav .nan_content {
+  width: 1033px;
+  height: 36px;
+}
+#nav .nav_content_left, #nav .nav_content_right li a {
+  font-size: 16px;
+  line-height: 36px;
+}
+#nav .nav_content_left {
+  z-index: 10;
+  width: 200px;
+  width: 200px;
+  height: 36px;
+  background: #ff0036;
+  padding-left: 42px;
+  color: #fff;
+  font-weight: 900;
+  position: relative;
+}
+#nav .nav_content_left > .iconfont {
+  position: absolute;
+  left: 15px;
+  top: 2px;
+}
+#nav .nav_content_left .nav_left_itme {
+  width: 200px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 38px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  line-height: 31.2px;
+}
+#nav .nav_content_left .nav_left_itme li:hover {
+  background: #fff;
+}
+#nav .nav_content_left .nav_left_itme li:hover a,
+#nav .nav_content_left .nav_left_itme li:hover .iconfont {
+  color: #ff0036;
+}
+#nav .nav_content_left .nav_left_itme .iconfont {
+  margin: 0 8px 0 14px;
+  font-weight: normal;
+}
+#nav .nav_content_left .nav_left_itme a {
+  color: #fff;
+  font-weight: normal;
+}
+#nav .mean_item_content {
+  position: absolute;
+  left: 200px;
+  top: 38px;
+}
+#nav .mean_item_content .mean_item_module {
+  padding-top: 10px;
+  padding-left: 30px;
+  color: #000;
+  width: 808px;
+  height: 500px;
+  position: absolute;
+  visibility: hidden;
+  background: #fff;
+}
+#nav .mean_item_content .mean_item_module a {
+  color: #000;
+  font-weight: normal;
+}
+#nav .nav_content_right li {
+  float: left;
+}
+#nav .nav_content_right li img {
+  width: 100px;
+  height: 30px;
+  margin: 3px 0;
+}
+#nav .nav_content_right li a {
+  color: #333333;
+  padding: 0 9px;
+}
+#nav .nav_content_right li a:hover {
+  color: #FF0036;
+}
+
+#banner {
+  width: 100%;
+  height: 500px;
+}
+#banner .banner {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+#banner ul {
+  width: 1000%;
+  position: absolute;
+}
+#banner ul li {
+  position: relative;
+  float: left;
+}
+#banner ul li .ban_img {
+  width: 1230px;
+  height: 500px;
+}
+#banner ul li .ad1,
+#banner ul li .ad2 {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 220px;
+  height: 234px;
+  background: #fff;
+  opacity: .5;
+  transition: 0.5s;
+}
+#banner ul li .ad1:hover,
+#banner ul li .ad2:hover {
+  opacity: 1;
+}
+#banner ul li .ad2 {
+  top: 257px;
+}
+#banner ol {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 26px;
+}
+#banner ol .bkColor {
+  background: #fff;
+}
+#banner ol li {
+  width: 25px;
+  height: 5px;
+  background: #000;
+  float: left;
+  opacity: .5;
+  margin-right: 8px;
+}
+
+/*# sourceMappingURL=common.css.map */

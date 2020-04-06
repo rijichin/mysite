@@ -1,0 +1,100 @@
+@charset 'utf-8';
+// list列表部分
+// 头部
+@mixin boxsize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.list-head {
+  padding: 6px 0;
+  color: #c3c3c3;
+  a {
+    color: #c3c3c3;
+    font-size: 12px;
+    font-weight: normal;
+    &:hover {
+      color: #d62921;
+      text-decoration: underline;
+    }
+  }
+}
+
+.list-item {
+  h3 {
+    font-size: 12px;
+    color: #806f66;
+    a {
+      //   color
+      font-size: 12px;
+      color: #806f66;
+      float: left;
+      padding: 3px 5px;
+      border: 1px solid #ccc;
+    }
+    label {
+      margin-left: 30px;
+      line-height: 24px;
+    }
+    select {
+      font-size: 12px;
+      color: #806f66;
+      outline: none;
+      height: 24px;
+      float: left;
+      border: 1px solid #ccc;
+    }
+  }
+  ul {
+    margin-top: 10px;
+    li {
+      float: left;
+      margin-right: 22px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      &:nth-of-type(5n) {
+        margin-right: 0;
+      }
+      &:hover a {
+        border: 4px solid #ff0036;
+      }
+      a {
+        @include boxsize(220px, 336px);
+        border: 4px solid transparent;
+        display: block;
+        padding: 4px 4px 1px 1px;
+        transition: all .5s;
+      }
+    }
+    img {
+      @include boxsize(209.6px, 209.6px);
+      display: block;
+    }
+    p {
+      @include boxsize(204px, 32px);
+      overflow: hidden;
+      white-space: nowrap;
+      color: #333;
+      font-size: 12px;
+    }
+    .price {
+      height: 30px;
+      color: #ff0036;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .sail {
+      font-size: 12px;
+      color: #ccc;
+      em {
+        font-style: normal;
+        color: #b57c5b;
+      }
+    }
+  }
+}
+
+.demo {
+  margin-bottom: 20px;
+  text-align: center;
+}

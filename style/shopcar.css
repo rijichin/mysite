@@ -1,0 +1,137 @@
+table {
+  width: 100%;
+}
+
+.shopcar {
+  margin-top: 20px;
+}
+.shopcar .t_head tr {
+  height: 50px;
+  line-height: 50px;
+}
+.shopcar .brand-info {
+  padding-left: 60px;
+}
+.shopcar th,
+.shopcar td {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  color: #000;
+}
+.shopcar th:nth-of-type(1),
+.shopcar td:nth-of-type(1) {
+  width: 50px;
+  text-align: center;
+}
+.shopcar th:nth-of-type(2),
+.shopcar td:nth-of-type(2) {
+  width: 520px;
+}
+.shopcar th:nth-of-type(3),
+.shopcar td:nth-of-type(3) {
+  width: 160px;
+}
+.shopcar th:nth-of-type(4),
+.shopcar td:nth-of-type(4) {
+  width: 160px;
+}
+.shopcar th:nth-of-type(5),
+.shopcar td:nth-of-type(5) {
+  width: 160px;
+}
+.shopcar th:nth-of-type(6),
+.shopcar td:nth-of-type(6) {
+  width: 176px;
+}
+.shopcar th input,
+.shopcar td input {
+  vertical-align: middle;
+}
+.shopcar .t_body {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.shopcar .t_body tr {
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+}
+.shopcar .t_body tr td a {
+  color: #3c3c3c;
+}
+.shopcar .t_body tr td a:hover {
+  color: #f40;
+  text-decoration: underline;
+}
+.shopcar .t_body tr td img {
+  width: 80px;
+  height: 80px;
+}
+.shopcar .t_body tr td input[type="text"] {
+  float: left;
+  width: 41px;
+  height: 25px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.shopcar .t_body tr td button {
+  float: left;
+  text-align: left;
+  width: 19px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+}
+.shopcar .bar {
+  height: 50px;
+  background: #e5e5e5;
+  margin-top: 10px;
+  line-height: 50px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.shopcar .bar .bar-left span {
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.shopcar .bar .bar-left a {
+  float: left;
+  margin-left: 25px;
+  color: #3c3c3c;
+}
+.shopcar .bar .bar-left a:hover {
+  color: #f40;
+  text-decoration: underline;
+}
+.shopcar .bar .bar-left .ckAll {
+  vertical-align: middle;
+}
+.shopcar .bar .brance-count {
+  margin-right: 30px;
+}
+.shopcar .bar .brance-count em {
+  color: #ff4400;
+  font-size: 18px;
+  font-style: normal;
+  vertical-align: bottom;
+  padding: 0 5px;
+}
+.shopcar .bar strong {
+  font-size: 20px;
+  color: #ff4400;
+  vertical-align: bottom;
+}
+.shopcar .bar .balance {
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  background: #ff0036;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=shopcar.css.map */

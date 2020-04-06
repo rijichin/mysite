@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/*logo导航部分*/
+
+@font-face {
+  font-family: iconfont;
+  src: url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.eot);
+  src: url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.eot?#iefix) format('embedded-opentype'), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.woff) format('woff'), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.ttf) format('truetype'), url(//at.alicdn.com/t/font_eu7qkdb0zt3jif6r.svg#fpIconFont) format('svg')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin boxsize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+#nav {
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px solid #ff0036;
+  .nav {
+    height: 166px;
+  }
+  // logo部分
+  .logo a {
+    @include boxsize(240px, 130px);
+    display: block;
+    text-indent: -9999em;
+    background: url(../img/logo.gif) no-repeat;
+    background-size: 240px 130px;
+    margin-left: -20px;
+  }
+  .fastkey {
+    @include boxsize(1010px, 130px);
+    // background: deeppink;
+    // 搜索部分
+    .search {
+      @include boxsize(626px, 40px);
+      position: relative;
+      margin: 38px 0 0 98px;
+      border: 2px solid #ff0036;
+      font-size: 0;
+      %borders {
+        float: left;
+        border: none;
+      }
+      input {
+        @include boxsize(480px, 34px);
+        margin-top: 1px;
+        margin-left: 10px;
+        font-size: 14px;
+        @extend %borders;
+      }
+      .search-ul {
+        position: absolute;
+        background: #fff;
+        width: 492px;
+        top: 38px;
+        left: -2px;
+        z-index: 100;
+        border: 1px solid transparent;
+        // border:;
+        a {
+          padding-left: 10px;
+          display: block;
+          height: 28px;
+          font-size: 14px;
+          line-height: 28px;
+          color: black;
+        }
+      }
+      button {
+        @include boxsize(132px, 36px);
+        height: 36px;
+        width: 132px;
+        color: #fff;
+        letter-spacing: 6px;
+        text-align: center;
+        font-size: 18px;
+        outline: none;
+        background: #ff0036;
+        @extend %borders;
+      }
+    }
+  }
+  .nan_content {
+    @include boxsize(1033px, 36px);
+    // background: deeppink;
+  }
+  %fontStyle {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  // 左侧导航商品分类
+  .nav_content_left {
+    z-index: 10;
+    width: 200px;
+    @include boxsize(200px, 36px);
+    background: #ff0036;
+    @extend %fontStyle;
+    padding-left: 42px;
+    color: #fff;
+    font-weight: 900;
+    position: relative;
+    >.iconfont {
+      position: absolute;
+      left: 15px;
+      top: 2px;
+    }
+    .nav_left_itme {
+      @include boxsize(200px, 500px);
+      position: absolute;
+      left: 0;
+      top: 38px;
+      background-color: rgba(0, 0, 0, .4);
+      font-size: 14px;
+      line-height: 31.2px;
+      li:hover {
+        background: #fff;
+        a,
+        .iconfont {
+          // font-weight: normal;
+          color: #ff0036;
+        }
+      }
+      .iconfont {
+        margin: 0 8px 0 14px;
+        font-weight: normal;
+      }
+      a {
+        color: #fff;
+        font-weight: normal;
+      }
+    }
+  }
+  // 商品分类内容
+  .mean_item_content {
+    position: absolute;
+    left: 200px;
+    top: 38px;
+    .mean_item_module {
+      padding-top: 10px;
+      padding-left: 30px;
+      color: #000;
+      @include boxsize(808px, 500px);
+      position: absolute;
+      visibility: hidden;
+      background: #fff;
+      a {
+        color: #000;
+        font-weight: normal;
+      }
+    }
+  }
+  // 右侧导航
+  .nav_content_right {
+    li {
+      float: left;
+      img {
+        @include boxsize(100px, 30px);
+        margin: 3px 0;
+      }
+      a {
+        @extend %fontStyle;
+        color: #333333;
+        padding: 0 9px;
+        &:hover {
+          color: #FF0036;
+        }
+      }
+    }
+  }
+}
+
+// banner部分
+#banner {
+  width: 100%;
+  height: 500px;
+  .banner {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  ul {
+    width: 1000%;
+    position: absolute;
+    li {
+      position: relative;
+      float: left;
+      .ban_img {
+        @include boxsize(1230px, 500px);
+      }
+      .ad1,
+      .ad2 {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        @include boxsize(220px, 234px);
+        background: #fff;
+        opacity: .5;
+        transition: 0.5s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .ad2 {
+        top: 257px;
+      }
+    }
+  }
+  ol {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 26px;
+    .bkColor {
+      background: #fff;
+    }
+    li {
+      @include boxsize(25px, 5px);
+      background: #000;
+      float: left;
+      opacity: .5;
+      margin-right: 8px;
+    }
+  }
+}

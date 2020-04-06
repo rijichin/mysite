@@ -1,0 +1,134 @@
+@mixin boxsize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+table {
+  width: 100%;
+}
+
+.shopcar {
+  margin-top: 20px;
+  .t_head tr {
+    height: 50px;
+    line-height: 50px;
+  }
+  .brand-info {
+    padding-left: 60px;
+  }
+  th,
+  td {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    color: #000;
+    &:nth-of-type(1) {
+      width: 50px;
+      text-align: center;
+    }
+    &:nth-of-type(2) {
+      width: 520px;
+    }
+    &:nth-of-type(3) {
+      width: 160px;
+    }
+    &:nth-of-type(4) {
+      width: 160px;
+    }
+    &:nth-of-type(5) {
+      width: 160px;
+    }
+    &:nth-of-type(6) {
+      width: 176px;
+    }
+    input {
+      vertical-align: middle;
+    }
+  }
+  .t_body {
+    width: 100%;
+    border: 1px solid #ccc;
+    tr {
+      height: 100px;
+      border-bottom: 1px solid #ccc;
+      td {
+        a {
+          color: #3c3c3c;
+          &:hover {
+            color: #f40;
+            text-decoration: underline;
+          }
+        }
+        img {
+          width: 80px;
+          height: 80px;
+        }
+        input[type="text"] {
+          float: left;
+          @include boxsize(41px, 25px);
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          text-align: center;
+        }
+        button {
+          float: left;
+          text-align: left;
+          @include boxsize(19px, 25px);
+          border: 1px solid #ccc;
+          background: #f0f0f0;
+        }
+      }
+    }
+  }
+  .bar {
+    height: 50px;
+    background: #e5e5e5;
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 12px;
+    font-weight: normal;
+    .bar-left {
+      span {
+        float: left;
+        @include boxsize(50px, 50px);
+        text-align: center;
+      }
+      a {
+        float: left;
+        margin-left: 25px;
+        color: #3c3c3c;
+        &:hover {
+          color: #f40;
+          text-decoration: underline;
+        }
+      }
+      .ckAll {
+        vertical-align: middle;
+      }
+    }
+    .brance-count {
+      margin-right: 30px;
+      em {
+        color: #ff4400;
+        font-size: 18px;
+        font-style: normal;
+        vertical-align: bottom;
+        padding: 0 5px;
+      }
+    }
+    strong {
+      font-size: 20px;
+      color: #ff4400;
+      vertical-align: bottom;
+    }
+    .balance {
+      display: inline-block;
+      width: 120px;
+      height: 50px;
+      background: #ff0036;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}

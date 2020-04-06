@@ -1,0 +1,94 @@
+.list-head {
+  padding: 6px 0;
+  color: #c3c3c3;
+}
+.list-head a {
+  color: #c3c3c3;
+  font-size: 12px;
+  font-weight: normal;
+}
+.list-head a:hover {
+  color: #d62921;
+  text-decoration: underline;
+}
+
+.list-item h3 {
+  font-size: 12px;
+  color: #806f66;
+}
+.list-item h3 a {
+  font-size: 12px;
+  color: #806f66;
+  float: left;
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+}
+.list-item h3 label {
+  margin-left: 30px;
+  line-height: 24px;
+}
+.list-item h3 select {
+  font-size: 12px;
+  color: #806f66;
+  outline: none;
+  height: 24px;
+  float: left;
+  border: 1px solid #ccc;
+}
+.list-item ul {
+  margin-top: 10px;
+}
+.list-item ul li {
+  float: left;
+  margin-right: 22px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.list-item ul li:nth-of-type(5n) {
+  margin-right: 0;
+}
+.list-item ul li:hover a {
+  border: 4px solid #ff0036;
+}
+.list-item ul li a {
+  width: 220px;
+  height: 336px;
+  border: 4px solid transparent;
+  display: block;
+  padding: 4px 4px 1px 1px;
+  transition: all .5s;
+}
+.list-item ul img {
+  width: 209.6px;
+  height: 209.6px;
+  display: block;
+}
+.list-item ul p {
+  width: 204px;
+  height: 32px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #333;
+  font-size: 12px;
+}
+.list-item ul .price {
+  height: 30px;
+  color: #ff0036;
+  font-size: 20px;
+  line-height: 30px;
+}
+.list-item ul .sail {
+  font-size: 12px;
+  color: #ccc;
+}
+.list-item ul .sail em {
+  font-style: normal;
+  color: #b57c5b;
+}
+
+.demo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=list.css.map */

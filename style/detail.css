@@ -1,0 +1,148 @@
+.detail .preview .spec .arrow-l, .detail .preview .spec .arrow-r {
+  width: 28px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.detail .detail-info .detail-price, .detail .detail-info .detail-num {
+  padding-left: 10px;
+}
+
+.detail {
+  height: 678px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.detail .preview {
+  width: 420px;
+  position: relative;
+}
+.detail .preview .small {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.detail .preview .small img {
+  width: 418px;
+  height: 418px;
+}
+.detail .preview .small .mark {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: move;
+  background: rgba(255, 255, 0, 0.5);
+}
+.detail .preview .big {
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  display: none;
+  overflow: hidden;
+  top: 0;
+  left: 440px;
+}
+.detail .preview .big img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.detail .preview .spec {
+  height: 60px;
+  margin-top: 22px;
+}
+.detail .preview .spec .arrow-l {
+  color: #f5f5f5;
+}
+.detail .preview .spec .arrow-r {
+  color: #ccc;
+}
+.detail .preview .spec .spec-box {
+  width: 362px;
+  overflow: hidden;
+  height: 60px;
+  position: relative;
+}
+.detail .preview .spec .spec-box .spec-list {
+  width: 300%;
+  position: absolute;
+}
+.detail .preview .spec .spec-box li {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 16px;
+}
+.detail .preview .spec .spec-box li img {
+  width: 60px;
+  height: 60px;
+}
+.detail .detail-info {
+  width: 530px;
+  height: 638px;
+  border-right: 1px solid #ccc;
+  margin-left: 20px;
+  color: #090909;
+  font-size: 12px;
+}
+.detail .detail-info .detail-info-title {
+  font-weight: 900;
+  font-size: 16px;
+  height: 20px;
+  line-height: 15px;
+}
+.detail .detail-info .detail-price {
+  width: 518px;
+  height: 118px;
+  background: #f0efef;
+  margin-top: 14px;
+  line-height: 118px;
+}
+.detail .detail-info .detail-price .detail-pri {
+  line-height: 118px;
+  color: #ff0036;
+  font-size: 22px;
+  vertical-align: bottom;
+}
+.detail .detail-info .detail-num {
+  margin-top: 100px;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+}
+.detail .detail-info .detail-num input {
+  width: 43px;
+  height: 40px;
+  background: #f5f5f5;
+  border: 1px solid #b8b7bd;
+  text-align: center;
+}
+.detail .detail-info .detail-num .car-Into {
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  background: #ff0036;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+.detail .detail-info .detail-num .message {
+  width: 100px;
+  height: 30px;
+  background: #ccc;
+  position: absolute;
+  text-align: center;
+  left: 10px;
+  top: 40px;
+  display: none;
+  color: #0a7e23;
+}
+
+/*# sourceMappingURL=detail.css.map */

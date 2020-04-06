@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="专业的综合网上购物商城" />
+  <meta name="keywords" content="网上购物,网上商城,手机,电脑" />
+  <title>天猫商城</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style/base.css">
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/registry.css">
+  <script src="../node_modules/requirejs/require.js" defer async="true" data-main="../script/main" id="currentpage" targetpage="../script/registrymodule.js"></script>
+</head>
+
+
+<body>
+  <div class="registry-head common">
+    <div class="logo">
+      <h1>
+        <a href="../index1.html">天猫</a>
+      </h1>
+    </div>
+  </div>
+  <div class="reg-content common">
+    <div class="head">
+      <span>注册新用户</span>
+      <span>我有账户,去<a href="./login.html">登录</a></span>
+    </div>
+    <div class="reg-info">
+      <form id="oform">
+        <div class="form-group">
+          <label for="exampleInputnickname">nickname:</label>
+          <input type="text" class="form-control" id="exampleInputnickname" name="nickname" placeholder="nickname">
+          <span></span>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email">
+          <span></span>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password:</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+          <span></span>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword2">Repeat password:</label>
+          <input type="password" class="form-control" id="exampleInputPassword2" name="repass" placeholder="Password">
+          <span></span>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Check me out</label>
+        </div>
+        <div class="btnbox">
+          <input type="submit" class="btn btn-success" name="submit" value="Submit"></input>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

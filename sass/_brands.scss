@@ -1,0 +1,183 @@
+@charset "utf-8";
+// 商品活动部分
+@mixin boxsize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+#brand {
+  width: 100%;
+  background: #f5f5f5;
+  margin-top: 33px;
+  .brand {
+    height: 372px;
+    // background: purple;
+  }
+  .brand_con {
+    height: 372px;
+    float: left;
+    &:nth-of-type(1) {
+      width: 234px;
+      .more {
+        color: transparent;
+      }
+    }
+    &:nth-of-type(2) {
+      width: 486px;
+      margin: 0 12px;
+    }
+    &:nth-of-type(3) {
+      width: 486px;
+    }
+    .brand_hd {
+      height: 55px;
+      position: relative;
+      span {
+        padding-left: 11px;
+        color: #333;
+        line-height: 55px;
+        font-weight: 900;
+      }
+      span:nth-of-type(1) {
+        font-size: 18px;
+      }
+      span:nth-of-type(2) {
+        font-size: 14px;
+      }
+    }
+    .more {
+      color: #666666;
+      right: 14px;
+      font-size: 16px;
+      position: absolute;
+      width: 56px;
+      line-height: 55px;
+      background: url(http://img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png) no-repeat;
+      background-size: 18px 18px;
+      background-position: right 20px;
+    }
+    img {
+      @include boxsize(100%, 317px);
+    }
+  }
+}
+
+// 楼梯导航部分
+.stairs {
+  width: 36px;
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  margin-left: -660px;
+  font-size: 12px;
+  color: #fff;
+  display: none;
+  p {
+    width: 24px;
+    height: 28px;
+    margin: 3px 8px;
+  }
+  span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: #ff0036;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 1px;
+    // m: 1px;
+  }
+  li {
+    @include boxsize(36px, 36px);
+    cursor: pointer;
+    background: #999;
+    margin-bottom: 1px;
+    overflow: hidden;
+    &:nth-of-type(1):hover,
+    &:nth-of-type(3):hover {
+      background: #64C333;
+    }
+    &:nth-of-type(2):hover {
+      background: #000000;
+    }
+    &:nth-of-type(4):hover {
+      background: #EA5F8D;
+    }
+    &:nth-of-type(5):hover {
+      background: #0AA6E8;
+    }
+    &:nth-of-type(6):hover {
+      background: #19C8A9;
+    }
+  }
+  .stair_top {
+    display: block;
+    @include boxsize(36px, 36px);
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    .iconfont {
+      display: block;
+    }
+  }
+}
+
+// 天猫国际 天猫超市 
+#tm_guoji,
+#tm_market,
+#tm_live,
+#tm_beautiful,
+#tm_cool,
+#tm_outdoor {
+  height: 662px;
+  background: #f5f5f5;
+  margin-top: 22px;
+  h3 {
+    height: 44px;
+    overflow: hidden;
+    // border: 2px solid black;
+    p {
+      padding-left: 15px;
+      border-left: 5px solid #333;
+      font-size: 18px;
+      height: 18px;
+      margin-top: 12px;
+      line-height: 18px;
+    }
+    img {
+      width: 214px;
+      height: 25px;
+      line-height: 44px;
+    }
+  }
+  li {
+    float: left;
+    width: 236px;
+    height: 302px;
+    background: #fff;
+    margin-bottom: 15px;
+    margin-right: 12px;
+    text-align: center;
+    &:nth-of-type(5n) {
+      margin-right: 0;
+    }
+    img {
+      width: 185px;
+      height: 185px;
+      margin-top: 20px;
+    }
+    p {
+      width: 135px;
+      height: 40px;
+      margin: 8px 49.5px;
+      overflow: hidden;
+      font-size: 14px;
+      color: #333333;
+    }
+    span {
+      display: block;
+      text-align: center;
+      color: #ff0036;
+    }
+  }
+}
